@@ -1,0 +1,27 @@
+For installing Docker on Windows, please follow below steps -
+
+Step 1: Download the Linux kernel update package (WSL 2). Download WSL 2 from below URL and set WSL 2 to run Docker on Windows
+        https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+Step 2: Install Linux kernel update package (WSL 2) which you downloaded in previous step.
+
+Step 3: Now open powershell with run as administrator and below commands which will enable WSL 2.
+
+	wsl --set-default-version 2
+	
+	for e.g. check my console output what you will see when you run above command-
+
+	PS C:\Windows\system32> wsl --set-default-version 2
+	For information on key differences with WSL 2 please visit https://aka.ms/wsl2
+	The operation completed successfully.
+
+Step 4: Now download Docker from below URL -
+	https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe
+
+Step 5: Install Docker which you downloaded in previous step.
+
+Step 6: Now restart your PC/Laptop.
+
+Step 7: If you are getting any error in Docker then you can restart docker service from powershell using below command.
+
+	restart-service *docker*
